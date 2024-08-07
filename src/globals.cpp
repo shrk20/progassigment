@@ -12,6 +12,7 @@ pros::Motor right_back(6, pros::E_MOTOR_GEAR_200, true, pros::E_MOTOR_ENCODER_CO
 
 pros::MotorGroup right_drive({right_back, right_middle, right_front});
 pros::MotorGroup left_drive({left_back, left_middle, left_front});
+pros::MotorGroup drivetrain({right_back, right_middle, right_front, left_back, left_middle, left_front});
 
 pros::Motor intake_motor(7, pros::E_MOTOR_GEAR_600, false, pros::E_MOTOR_ENCODER_COUNTS);
 
